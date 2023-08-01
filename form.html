@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+   <div>
+    <header style="background-color: rgb(30, 155, 155); font-size: larger;">
+      <nav>
+        <a href="./first .html">HOME</a>&nbsp
+        <a href="https://www.google.com">GOOGLE</a>
+      </nav>
+    </header>
+   </div>
+   <div>
+    <form action="">
+      <div>  
+            <fieldset>
+                <legend>User Information</legend>
+                <br>
+        <label for="fname">FIRST NAME:</label>
+            <input type="text" id="fname">
+        <label for="lname">LAST NAME:</label>
+            <input type="text" id="lname">
+          <br><br>
+        <label for="age">AGE:</label>
+            <input type="number" id="age" min="0" max="100">
+          <br><br>
+        <label for="profile-pic">PROFILE PIC:</label>  
+           <input type="file" id="profile-pic">
+           <br><br>
+        <label for="dob">DOB:</label>
+            <input type="date" id="dob">
+            <br><br>
+        <label id="gen">GENDER:</label>  
+           <input type="radio" value="male" name="GENDER" id="genM">
+           <label for="genM"> MALE</label>
+           <input type="radio" value="female" name="GENDER" id="genF">
+           <label for="genF">FEMALE</label>
+           <input type="radio" value="other" name="GENDER" id="genOTH">
+           <label for="genOTH">OTHER</label>
+           <br><br>
+        <label for="email">User Email:</label>  
+           <input type="email" id="email">
+           <br><br>
+        <label for="address">ADDRESS:</label>
+          <textarea name="address" id="address" cols="15" rows="8" style="font-size:large;"></textarea>
+        <label for="phone">MOBILE No:</label>  
+            <input type="tel" maxlength="10" id="phone">
+          <br><br>
+        <label>NATIONALITY:</label>
+             <label for="indian">Indian</label>
+             <input type="checkbox" value="indian" id="indian">
+          <br><br>
+        <label for="martialstatus">MARITIAL STATUS:</label>  
+            <select name="" id="martialstatus" >
+                <option >....</option>
+                <option value="single">single</option>
+                <option value="married">married</option>
+                <option value="widowed">widowed</option>
+                <option value="divorced">divorced</option>
+                <option value="seperated">seperated</option>
+            </select>   
+            <br>
+           </fieldset>
+     </div>  
+     <br>
+     <div>
+            <fieldset>
+                <legend>Educatonal Qualification & Skills</legend>
+                <br>
+                 <div>
+                    <label for="Qualification">QUALIFICATION:</label>
+                    <label for="sslc">SSLC</label>
+                    <input type="checkbox" value="sslc" id="sslc" name="QUALIFICATION">
+                    <label for="+2">+2</label>
+                    <input type="checkbox" value="+2" id="+2" name="QUALIFICATION">
+                    <label for="degree">DEGREE</label>
+                    <input type="checkbox" id="degree" value="degree" name="QUALIFICATION">
+                    <label for="PG">POSTGRAGUATE</label>
+                    <input type="checkbox" id="PG" value="PG" name="QUALIFICATION">
+                 </div>
+                 <br>
+                 
+                 <div>
+                  <table border=2px;>
+                    <thead>
+                      <tr>
+                        <th>sl.no</th>
+                        <th>&nbsp</th>
+                        <th>YEAR OF PASS</th>
+                        <th>PERCENTAGE</th>
+                        <th>INSTITUTION</th>
+                        <th>GARDE</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>1</th>
+                        <th>SSLC</th>
+                        <td><input type="date"></td>
+                        <td><input type="number" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                      </tr>
+                      <tr>
+                         <th>2</th>
+                        <th>+2</th>
+                        <td><input type="date"></td>
+                        <td><input type="number" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                      </tr>
+                      <tr>
+                         <th>3</th>
+                        <th>DEGREE</th>
+                        <td><input type="date"></td>
+                        <td><input type="number" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <th>POSTGRAGUATE</th>
+                        <td><input type="date"></td>
+                        <td><input type="number" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 </div> <br>
+                 <div>
+                  <label for="Skills">SKILLS:</label>
+                  <!-- <input list="Skills"> -->
+                  <datalist id="Skills">
+                     <option value="html"></option>
+                     <option value="css"></option>
+                     <option value="javascript"></option>
+                     <option value="php"></option>
+                     <option value="python"></option>
+                  </datalist> 
+                 </div> <br>
+            </fieldset>
+            <br>
+          <div style="text-align: center;">
+            <input type="submit"> <input type="reset">
+          </div>
+     </div>    
+    </form>
+   </div> 
+</body>
+</html>
